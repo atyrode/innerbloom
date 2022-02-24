@@ -1,4 +1,4 @@
-from innerbloom.src.database import Database
+from innerbloom.src.core.database import Database
 from os.path import isfile
 
 
