@@ -14,6 +14,10 @@ class Database:
         self.connect()
 
     def connect(self):
+
+        if not os.path.exists("db"):
+            os.makedirs("db")
+
         self.connection = sqlite3.connect(f"db/{self.name}.db")
         self.cursor = self.connection.cursor()
 
